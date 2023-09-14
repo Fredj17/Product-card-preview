@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: hsl(30, 38%, 92%);
+}
+
+/* Sub-container styling*/
+.sub-container {
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sub-container p {
+  padding: 30px 15px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+.sub-container h4 {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.25rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 15px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+.sub-container h2 {
+  padding-left: 10px;
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+}
+.sub-container img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+/*-----column styling-----*/
+.column {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.text-area {
+  margin: 0 auto;
+  padding-left: 26px;
+  border: 1px inset transparent;
+}
+
+/*-----price styling----*/
+.new-price {
+  font-size: 36px;
+  padding: 10px 18px;
+  color: #00693e;
+  font-family: "Fraunces", serif;
+}
+.old-price {
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+}
+
+/*-----button Styling-----*/
+.hero-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 15px;
+  margin: 20px;
+  background-color: #00693e;
+  border-radius: 10px;
+  height: 15%;
+  width: 85%;
+  color: #fff;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: hsl(158, 51%, 18%);
+  border: 1px solid transparent;
+}
+.hero-btn img {
+  display: inline-block;
+  padding-right: 10px;
+}
+@media (max-width: 1440px) {
+  .sub-container img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 375px) or (max-width: 645px) {
+  .sub-container {
+    width: 400px;
+    height: 650px;
+    display: block;
+  }
+  .text-area {
+    padding-left: 10px;
+  }
+  .sub-container p {
+    padding: 15px 10px;
+  }
+  .sub-container h4 {
+    padding-top: 2px;
+  }
+}
+/*------------Footer-----------*/
+.footer {
+  text-align: center;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+.footer a:hover {
+  color: blue;
+}
